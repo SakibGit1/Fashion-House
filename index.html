@@ -13,6 +13,8 @@
     <!-- css -->
     <link rel="stylesheet" href="style.css">
     <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -96,7 +98,7 @@
             </div>
             <!-- Cards Box Are From Here -->
             <div class="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-5  ">
-                <div class="card  bg-base-100 shadow-xl image-full animate__animated animate__fadeInUp">
+                <div class="card  bg-base-100 shadow-xl image-full " data-aos="flip-left">
                     <figure><img src="./images/shoes.avif" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Shoes!</h2>
@@ -106,7 +108,7 @@
                       </div>
                     </div>
                   </div>
-                <div class="card  bg-base-100 shadow-xl image-full animate__animated animate__fadeInUp">
+                <div class="card  bg-base-100 shadow-xl image-full " data-aos="zoom-in" >
                     <figure><img src="./images/hoodies.avif" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Hoodies!</h2>
@@ -116,7 +118,7 @@
                       </div>
                     </div>
                   </div>
-                <div class="card  bg-base-100 shadow-xl image-full animate__animated animate__fadeInUp">
+                <div class="card  bg-base-100 shadow-xl image-full " data-aos="flip-right">
                     <figure><img src="./images/perfume.avif" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">Perfume!</h2>
@@ -131,13 +133,13 @@
     <!-- Easy Purchase Section -->
     <section class=" px-8 md:px-16 lg:px-24 py-5 my-10">
         <div class="flex flex-col md:flex-row gap-10 items-center">
-            <div class="easy-text animate__animated animate__fadeInLeft">
+            <div  data-aos="fade-right">
                 <h1 class="text-2xl md:text-4xl mb-2">Easy Purchase</h1>
                 <p>we believe that style is a reflection of your unique personality and our mission is to provide you with a diverse and trendy collection.
     
                     Our mission is to provide you with a diverse and trendy collection.</p>
             </div>
-            <div class="animate__animated animate__fadeInRight ">
+            <div  data-aos="fade-left">
                 <img src="./images/easy-purchase.avif" alt="">
             </div>
         </div>
@@ -152,7 +154,7 @@
       <div>
        <!-- top Card Box -->
               <div id="boxes" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 my-5 ">
-                <div class="card bg-base-100 shadow-xl box" >
+                <div class="card bg-base-100 shadow-xl box" data-aos="fade-up" >
                     <figure><img src="./images/elegant-businessman-shirt-wooden-desk-stack-generated-by-ai_188544-34678.avif" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">
@@ -166,7 +168,7 @@
                       </div>
                     </div>
                   </div>
-                <div class="card bg-base-100 shadow-xl box">
+                <div class="card bg-base-100 shadow-xl box" data-aos="fade-up">
                     <figure><img src="./images/shiny-black-leather-shoes-exude-modern-luxury-generated-by-ai_188544-36154.avif" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">
@@ -180,7 +182,7 @@
                       </div>
                     </div>
                   </div>
-                <div class="card bg-base-100 shadow-xl box">
+                <div class="card bg-base-100 shadow-xl box" data-aos="fade-up">
                     <figure><img src="./images/blue-yellow-t-shirt-wooden-hanger-generated-by-ai_188544-42185.avif" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">
@@ -194,7 +196,7 @@
                       </div>
                     </div>
                   </div>
-                <div class="card bg-base-100 shadow-xl box">
+                <div class="card bg-base-100 shadow-xl box" data-aos="fade-up">
                     <figure><img src="./images/elegant-businessman-attire-hangs-modern-closet-generated-by-ai_188544-15312.avif" alt="Shoes" /></figure>
                     <div class="card-body">
                       <h2 class="card-title">
@@ -274,6 +276,11 @@
 
       <!-- js -->
       <script src="animation.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
 </body>
 
 </html>
